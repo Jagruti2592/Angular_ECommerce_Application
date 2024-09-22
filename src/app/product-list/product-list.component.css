@@ -1,0 +1,13 @@
+ekart--product--container{
+    padding: 10px 30px;
+}
+
+button{
+    background-color: #5c615c;
+    color: white;
+    padding: 5px 10px;
+    margin: 0px 5 px;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+}

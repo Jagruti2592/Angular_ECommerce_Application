@@ -1,3 +1,4 @@
+<div class="ekart--product--container">
 <img [src]="product.pImage">
 <p>Name: {{ product.name }}</p>
 <p>Price:{{ "$" + product.price }}</p>
@@ -10,7 +11,14 @@
       : "Not in Stock"
   }}
 </p>
+<!--  Property binding example-->
+<!-- <button [disabled]="!(product.inStock > 0 )">Buy Now</button> -->
 
-<button [disabled]="!(product.inStock > 0 )">Buy Now</button>
-<input   type="text" (input)="onNameChange($event)" >
-<p>Name property value:{{name}} </p>
+<!-- Event binding example-->
+<!-- <input   type="text" (input)="onNameChange($event)" >
+<p>Name property value:{{name}} </p> -->
+
+<button (click)="decrementCartValue()"> - </button>
+<span>{{ addToCart }}</span>
+<button (click)="incrementCartValue()"> + </button>
+</div>
