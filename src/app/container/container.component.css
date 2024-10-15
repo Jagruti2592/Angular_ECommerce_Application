@@ -1,8 +1,9 @@
 ekart--product--container{
-    padding: 10px 30px;
+    margin: 20px auto;
+    padding: 10px 20vh;
 }
 
-button{
+/* button{
     background-color: #5c615c;
     color: white;
     padding: 5px 10px;
@@ -10,4 +11,4 @@ button{
     border: none;
     cursor: pointer;
     width: 10%;
-}
+} */
