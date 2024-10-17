@@ -17,14 +17,27 @@
 
 .btn{
     padding: 5px 10px;
-    border: none;
+    border: #aaa 1px solid;
+    background-color: #131314;
+    color: #fff;
 }
 
 .btn--search{
     padding: 12px 30px;
+    background-color: #131314;
+    color: #fff;
+    margin-left: 0px;
+    border: #aaa 1px solid;
+}
+
+.btn-search-disabled{
+    padding: 12px 30px;
     background-color: #28282b;
     color: #fff;
-    margin-left: -5px;
+    margin-left: 0px;
+    opacity: 0.5;
+    border: #aaa 1px solid;
+    cursor: not-allowed;
 }
 
 .ekart-search-result-for{
