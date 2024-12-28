@@ -5,14 +5,16 @@
     name="filter"
     value="all"
     [(ngModel)]="selectedFilterRadioButtonValue"
+    (change)="onSelectedFilterRadioButtonChanged()"
   />
   <span>{{ "All (" + all + ")" }}</span>
 
   <input
     type="radio"
     name="filter"
-    value="trueP"
+    value="true"
     [(ngModel)]="selectedFilterRadioButtonValue"
+    (change)="onSelectedFilterRadioButtonChanged()"
   />
   <span>{{ "In Stock (" + inStock + ")" }}</span>
 
@@ -21,6 +23,7 @@
     name="filter"
     value="false"
     [(ngModel)]="selectedFilterRadioButtonValue"
+    (change)="onSelectedFilterRadioButtonChanged()"
   />
   <span>{{ "Out of Stock (" + outOfSttock + ")" }}</span>
 </div>
