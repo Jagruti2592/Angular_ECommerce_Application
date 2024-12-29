@@ -42,6 +42,11 @@ export class ContainerComponent {
   //     this.addToCart = this.product.inStock;
     
   //   }
+
+  searchText: string = '';
   
-  
+  setSearchText(value: any){
+    console.log(this.searchText);
+    this.searchText = value;
+  }
 }

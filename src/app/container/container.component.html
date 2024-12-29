@@ -21,8 +21,9 @@ Property binding example-->
   <!-- <button (click)="decrementCartValue()"> - </button>
 <span>{{ addToCart }}</span>
 <button (click)="incrementCartValue()"> + </button> -->
-  <app-search></app-search>
-  <product-list></product-list>
+  <app-search (searchTextChanged)="setSearchText($event)" ></app-search>
+  
+  <product-list  [searchText]="searchText"></product-list>
   <!--Example of *ngFor structural directive-->
   <!-- <div *ngFor="let item; of [2, 3, 4, 5, 6, 8]">
     <p>Current element of array is: {{ item }}</p>
